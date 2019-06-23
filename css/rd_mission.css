@@ -1,0 +1,120 @@
+@meta charset="UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800');
+
+*{margin:0; padding:0; box-sizing:border-box;}
+html,body{font:0.8em 'Nanum Gothic',sans-serif; color:#666;}
+a{text-decoration:none; font-size:0.8em; color:#666;}
+img{vertical-align:bottom;}
+ul li{list-style:none;}
+	table,td,th{border-collapse:collapse; text-align:center;}
+	
+div.wrap{height:100%; font-size:1.25em; text-align:center;}
+
+.im_intro_img{display:inline-table;text-align:center; width:100%; height:50vh; background:url(../img/rd_mission/shutterstock_186019679_Cut.jpg) no-repeat center bottom; background-size:cover; }
+.im_intro_img p{font-size:3.4em; color:#fff; font-weight:800; display:table-cell; vertical-align:middle;}
+
+div.main_mv_body{width:100%;}
+/*Brilliant Section시작*/
+
+div.text_bc_img{position:relative; left:0; top:0; height:70vh; overflow:hidden; }
+
+div.im_section1
+{
+	height:80vh; 
+	background:url(../img/rd_mission/brillianttext.jpg) no-repeat center bottom 20%; 
+	background-attachment:fixed;
+}
+div.im_section2
+{
+	background:url(../img/rd_mission/significanttext.jpg) no-repeat center center; 
+	background-attachment:fixed;
+}
+div.im_section3
+{
+	background:url(../img/rd_mission/exploratorytext.jpg) no-repeat center top 20%;
+	background-attachment:fixed;
+}
+div.im_section4
+{
+	background:url(../img/rd_mission/timelytext.jpg) no-repeat center top 20%;
+	background-attachment:fixed;
+	background-attachment:fixed;
+}
+div.section1_text_arti{position:absolute; width:50%; margin-top:200px; left:0; top:0;}
+div.section1_text_arti h2{margin:20px 0;}
+div.section1_text_arti p.sec1_text{width:51%; margin:0 auto;}
+
+div.sectionwrap{width:50%; position:absolute; }/*이미지*/
+div.section1_img_arti{right:0; top:150px;}
+div.sec_img_arti_text{
+		position:absolute;
+		left:50%;
+		top:100%;
+		transform:translateX(-50%);
+-webkit-transform:translateX(-50%);
+		 
+}
+div.sec_img_arti_text span{
+	display:block; width:2px; height:50px; background:#ddd; margin:0 auto;
+}
+div.sec_img_arti_text h2{
+	margin:20px 0;
+}
+
+div.section3_img_arti{right:0;}
+
+div.section1_img_arti{opacity:0;}
+div.section1_img_arti.on
+{
+		animation:fadeinright 1.2s ease forwards;
+-webkit-animation:fadeinright 1.2s ease forwards;
+}
+div.section2_img_arti{opacity:0;}
+div.section2_img_arti.on
+{
+		animation:fadeinleft 1.2s ease forwards;
+-webkit-animation:fadeinleft 1.2s ease forwards;
+}
+div.section3_img_arti{opacity:0;}
+div.section3_img_arti.on
+{
+		animation:fadeinright 1.2s ease forwards;
+-webkit-animation:fadeinright 1.2s ease forwards;
+}
+div.section4_img_arti{opacity:0;}
+div.section4_img_arti.on
+{
+		animation:fadeinleft 1.2s ease forwards;
+-webkit-animation:fadeinleft 1.2s ease forwards;
+}
+@keyframes fadeinright{
+	0%{
+		opacity:0;
+		right:-50%;
+	}
+	100%{
+		opacity:1;
+		right:0;
+	}
+}
+@-webkit-keyframes fadeinright{
+	0%{
+		opacity:0;
+		right:-50%;
+	}
+	100%{
+		opacity:1;
+		right:0;
+	}
+}
+@keyframes fadeinleft{
+	0%{
+		opacity:0;
+		left:-50%;
+	}
+	100%{
+		opacity:1;
+		left:0;
+	}
+}
+

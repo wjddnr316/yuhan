@@ -1,0 +1,1134 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+<meta charset="utf-8">
+
+<title>YUHAN l 유한양행</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="https://fonts.googleapis.com/css?family=Nanum+Myeongjo:400,700,800&display=swap&subset=korean" rel="stylesheet">
+<link rel="SHORTCUT ICON" href="img/index/favicon.ico"/>
+<link rel="icon" href="http://www.yourwebsite.com/favicon.ico" type="image/x-icon"/>
+
+<link rel="STYLESHEET" type="text/css" href="css/navigation.css">
+<link rel="STYLESHEET" type="text/css" href="css/index.css">
+<link rel="stylesheet" type="text/css" href="./slick/slick.css">
+<link rel="stylesheet" type="text/css" href="./slick/slick-theme.css">
+<link rel="STYLESHEET" type="text/css" href="css/index_ui.css">
+<link rel="STYLESHEET" type="text/css" href="css/index_mobile.css">
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-latest.js"></script>
+<script src="js/prefixfree.min.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/rolling.js"></script>
+<script type="text/javascript" src="js/jquery.cookie.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.10.4.custom.min.js"></script>
+
+</head>
+
+<body>
+<input id="toggle" type="checkbox"/>
+<input id="toggle1" type="checkbox"/>
+
+    <p id="pop_wrap">
+    <a href="event_main.html" target="_parent">
+        <img src="img/index/popup.png" alt="" usemap="#pop"/>
+    </a>
+    <map name="pop" id="pop">
+        <area shape="rect" coords="239,370,287,403" href="#" alt="창닫기"/>
+        <area shape="rect" coords="0,370,239,403" href="#" alt="하루동안 창닫기"/>
+    </map>
+</p>
+    <!--메뉴버튼-->
+    <div id="menu_icon">
+		<label for="toggle1" id="menu_btn" class="hamburger">
+			<span></span>
+			<span></span>
+			<span></span>
+		</label>
+	</div>
+    <!--풀메뉴-->
+	<nav id="full_navi">
+		<div class="full_navi_zone">	
+			<header id="full_menu_head">
+				<div><a href="index.html"><img src="img/index/logo.png" width="40px" height="auto" alt="홈페이지이동"/></a></div>
+				<div></div>
+			</header>
+			<ul>
+				<li class="full_menu1 f_menu"><a href="company_main.html">회사소개</a>
+					<ul>
+						<li><a href="company_main.html">CEO메세지</a></li>
+						<li><a href="company_main.html">회사연혁</a></li>
+						<li><a href="company_main.html">경영정보</a></li>
+						<li><a href="company_main.html">기업이념</a></li>
+						<li><a href="company_main.html">CSR</a></li>
+					</ul> 
+				</li>
+			</ul>
+			<ul>
+				<li class="full_menu2 f_menu"><a href="product_main.html">제품정보</a>
+					<ul>
+						<li><a href="product_list.html">전문의약품</a></li>
+						<li><a href="product_list.html">일반의약품</a></li>
+						<li><a href="product_list.html">생활용품</a></li>
+						<li><a href="product_list.html">동물약품</a></li>
+					</ul> 
+				</li>
+			</ul>
+			<ul>
+				<li class="full_menu3 f_menu"><a href="research_develop.html">연구개발</a>
+					<ul>
+						<li><a href="rd_mission.html">Mission&amp;Vission</a></li>
+						<li><a href="rd_progress.html">연구역량</a></li>
+						<li><a href="rd_pipeline.html">Pipeline</a></li>
+					</ul> 
+				</li>
+			</ul>
+			<ul>
+				<li class="full_menu4 f_menu"><a href="invest_main.html">투자정보</a>
+					<ul>
+						<li><a href="news.html">언론보도 및 기업소식</a></li>
+						<li><a href="invest_co.html">기업지배구조</a></li>
+						<li><a href="invest_main.html">Anuual Report</a></li>
+					</ul> 
+				</li>
+			</ul>
+			<ul>
+				<li class="full_menu5 f_menu"><a href="event_main.html">이벤트</a>
+					<ul>
+						<li><a href="event_1.html">U&amp;Smile기부이벤트</a></li>
+						<li><a href="event_2.html">영양제 증정 이벤트</a></li>
+						<li><a href="#">Produce Yuhan</a></li>
+					</ul> 
+				</li>
+			</ul>
+			<ul class="fullsub_menuzone">
+				<li class="full_sub"><a href="#"><p>고객센터</p><img src="img/index/cs50px.png" alt="고객센터로이동"/></a></li>
+				<li class="full_sub"><a href="#"><p>공지사항</p><img src="img/index/notice50px.png" alt="고객센터로이동"/></a></li>
+				<li class="full_sub"><a href="#"><p>보안센터</p><img src="img/index/security50px.png" alt="고객센터로이동"/></a></li>
+				<li class="full_sub"><a href="cart.html"><p>장바구니</p><img src="img/index/cart50px.png" alt="고객센터로이동"/></a></li>
+			</ul>
+			<div class="full_nav_map">
+			</div>
+		</div>
+	</nav>
+    <!--헤더네비게이션GNB-->
+	<header id="global_navi" class="main_nav">
+		<div id="im-gnb">
+			<div id="gnb_inner">
+				<div id="logo_img">
+					<a href="index.html">
+						<!-- <img id="logo1"src="img/index/logo_gray.png" width="30px" height="auto" alt="홈페이지이동"/> -->
+						<img id="logo2"src="img/index/logo.png" width="30px" height="auto" alt="홈페이지이동"/>
+						<img id="logo3"src="img/index/Untitled-3.png" width="75px" height="auto" alt="홈페이지이동"/>
+					</a>
+				</div>
+				
+				<nav id="menu_left_cont">
+					<ul class="im_gnb_category">
+						<li class="menu1 menu"><a href="company_main.html">회사소개<p class="underline"></p></a>
+							<div class="sub1zone sub">
+								<div class="sub1wrap subwrap">
+									<ul class="sub1_list_wrap">
+										<li class="sub1_list1 sub1list"><a href="company_main.html">유한소개 &gt;</a></li>
+										<li class="sub1_list1_history sub1_list_art"><a href="company_main.html">회사연혁</a>
+										</li>
+										<li class="sub1_list1_ceo sub1_list_art"><a href="company_main.html">CEO메세지</a>
+										</li>
+										<li class="sub1_list1_true sub1_list_art"><a href="company_main.html">부패방지방침</a>
+										</li>
+										<li class="sub1_list1_phiilosophy sub1_list_art"><a href="company_main.html">기업이념</a>
+										</li>
+										<li class="sub1_list1_business sub1_list_art"><a href="company_main.html">사업분야</a>
+										</li>
+										<li class="sub1_list1_family sub1_list_art"><a href="company_main.html">가족회사</a>	
+										</li>
+									</ul>
+									<ul class="sub1_list_wrap">
+										<li class="sub2_list1 sub1list"><a href="story.html">추천스토리 &gt;</a>
+										</li>
+										<li class="sub1_list_art"><a href="story.html">미세먼지에관하여</a>	
+										</li>
+										<li class="sub1_list_art"><a href="story.html">숙면의모든 것</a>	
+										</li>
+										<li class="sub1_list_art"><a href="story.html">치매에 관한 진실</a>	
+										</li>
+										<li class="sub1_list_art"><a href="story.html">피로의 원인은?</a>	
+										</li>
+										<li class="sub1_list_art"><a href="story.html">간건강을 회복하자</a>	
+										</li>
+										<li class="sub1_list_art"><a href="story.html">눈의피로에 대하여</a>	
+										</li>
+									</ul>
+									<ul class="sub1_list_wrap">
+										<li class="sub3_list1 sub1list"><a href="news.html">유한소식 &gt;</a>
+										</li>
+										<li class="sub1_list_art"><a href="news.html">[투명한 경영 없이 좋은 기업이 나올까]...</a>	
+										</li>
+										<li class="sub1_list_art"><a href="news.html">[폐암신약 '레이저티닙'상용화 총력]...</a>	
+										</li>
+										<li class="sub1_list_art"><a href="news.html">[신약개발 총력,2.5조 기술수출 '결실']...</a>	
+										</li>
+										<li class="sub1_list_art"><a href="news.html">[무적자 경영,사회 공헌 모델이되다]...</a>	
+										</li>
+										<li class="sub1_list_art"><a href="news.html">[올해 연구비 1700억원 투자]...</a>
+										</li>
+									</ul>
+									<ul class="sub1_list_wrap">
+										<li class="sub3_list1 sub1list"><a href="company_main2.html">CSR공정거래자율준수 프로그램 &gt;</a>
+										</li>
+									</ul>
+									<div class="sub1_imgbox">
+										<img src="img/index/26864519_1217413831736769_6275017364861878272_n.jpg"/>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="menu2 menu"><a href="product_main.html">제품정보<p class="underline"></p></a>
+							<div class="sub2zone sub">
+								<div class="sub2wrap subwrap">
+									<ul class="sub2_list_pd sub2atc">
+										<li class="pd_menu pd_menu1"><a href="product_list.html">전문의약품 &gt;</a>
+											<ul class="pd_menu1_sub pd_sub_menu">
+												<li><a href="product_list.html">순환기용약</a></li>
+												<li><a href="product_list.html">대사성질환</a></li>
+												<li><a href="product_list.html">호흡기/알레르기용</a></li>
+												<li><a href="product_list.html">소화기관용</a></li>
+												<li><a href="product_list.html">진통제/루마티스관절</a></li>
+												<li><a href="product_list.html">비뇨생식기관</a></li>
+												<li><a href="product_list.html">호르몬제</a></li>
+											</ul>
+											<div class="product_hover">
+												<img src="img/index/gnb_pd_new2.jpg" alt="전문의약품이미지">
+											</div>
+										</li>
+										<li class="pd_menu pd_menu2"><a href="product_list.html">일반의약품 &gt;</a>
+											<ul class="pd_menu2_sub pd_sub_menu">
+												<li><a href="product_list.html">비타민/무기질제</a></li>
+												<li><a href="product_list.html">소화기관용</a></li>
+												<li><a href="product_list.html">외용제</a></li>
+												<li><a href="product_list.html">진통제</a></li>
+												<li><a href="product_list.html">호흡기관용</a></li>
+												<li><a href="product_list.html">피임제</a></li>
+												<li><a href="product_list.html">순환계용</a></li>
+											</ul>
+											<div>
+												<img src="img/index/gnb_pd_new4.jpg" alt="일반의약품이미지">
+											</div>
+										</li>
+										<li class="pd_menu pd_menu3"><a href="product_list.html">생활용품 &gt;</a>
+											<ul class="pd_menu3_sub pd_sub_menu">
+												<li><a href="product_list.html">락스류</a></li>
+												<li><a href="product_list.html">가정용 세정제</a></li>
+												<li><a href="product_list.html">배수관 세정제</a></li>
+												<li><a href="product_list.html">베이킹소다</a></li>
+												<li><a href="product_list.html">구강위생용품</a></li>
+												<li><a href="product_list.html">주방용품</a></li>
+												<li><a href="product_list.html">살충제</a></li>
+											</ul>
+											<div>
+												<img src="img/index/gnb_pd_new3.jpg" alt="생활용품이미지">
+											</div>
+										</li>
+										<li class="pd_menu pd_menu4"><a href="product_list.html">동물약품 &gt;</a>
+											<ul class="pd_menu4_sub pd_sub_menu">
+												<li><a href="product_list.html">반려견 사료</a></li>
+												<li><a href="product_list.html">미용 및 탈취제</a></li>
+												<li><a href="product_list.html">고양이용품</a></li>
+												<li><a href="product_list.html">영양제</a></li>
+												<li><a href="product_list.html">말용	영양제</a></li>
+											</ul>
+											<div>
+												<img src="img/index/gnb_pd_new1.jpg" alt="동물약품이미지">
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						
+						<li  class="menu3 menu"><a href="research_develop.html">연구개발<p class="underline"></p></a>
+							<div class="sub3zone sub">
+								<div class="sub3wrap subwrap">
+									<ul>
+										<li><a href="rd_mission.html"><img src="img/index/gnb_rd_1.jpg" alt="연구이미지"/></a>미션&amp;비젼</li>
+										<li><a href="rd_progress.html"><img src="img/index/gnb_rd_2.jpg" alt="연구소이미지"/></a>연구역량</li>
+										<li><a href="rd_pipeline.html"><img src="img/index/gnb_rd_3.jpg" alt="파이프라인이미지"/></a>파이프라인</li>
+									</ul>
+									<div class="right_cont">
+										<h1	>Our Progress</h1><p>유한의 R&amp;D는 새로운 시장을 개척하는 신약개발을 위해 오늘도 미래로 나아가고 있습니다</p>
+										<img src="img/index/gnb_rd_4.jpg">
+									</div>
+								</div>
+							</div>
+						</li>
+						
+						<li  class="menu4 menu"><a href="invest_main.html">투자정보<p class="underline"></p></a>
+							<div class="sub4zone sub">
+								<div class="sub4wrap subwrap">
+									<ul>
+										<li id="sub4_menu"><a href="invest_co.html">기업지배구조 &gt;</a>
+											<ul>
+												<li><a href="invest_co.html">정관</a></li>
+												<li><a href="invest_co.html">이사회구성</a></li>
+												<li><a href="invest_co.html">이사회활동내역</a></li>
+												<li><a href="invest_co.html">감사기구</a></li>
+												<li><a href="invest_co.html">주주구성</a></li>
+											</ul>
+											<div>
+												<img src="img/index/gnb_iv_2.jpg">
+											</div>
+											
+										</li>
+										<li id="sub4_menu"><a href="invest_main.html">Annual Report &gt;</a>
+											<ul>
+												<li><a href="invest_main.html">AnnualReport 2017</a></li>
+												<li><a href="invest_main.html">AnnualReport 2016</a></li>
+												<li><a href="invest_main.html">AnnualReport 2015</a></li>
+											</ul>
+											<div>
+												<img src="img/index/gnb_iv_3.jpg">
+											</div>
+										</li>
+										<li id="sub4_menu"><a href="invest_main.html">주요일정 &gt;</a>
+											<ul>
+												<li><a href="invest_main.html">96기 정기 주주총회</a></li>
+												<li><a href="invest_main.html">故 유일한 박사 48주기 추모식</a></li>
+												<li><a href="invest_main.html">제 13회 유일한상 시상식</a></li>
+												<li><a href="invest_main.html">유한양행, 2019년 시무식 개최</a></li>
+											</ul>
+											<div>
+												<img src="img/index/gnb_iv_4.jpg">
+											</div>
+										</li>
+										<li id="sub4_menu"><a href="invest_main.html">재무정보 &gt;</a>
+											<ul>
+												<li><a href="invest_main.html">주식정보</a></li>
+												<li><a href="invest_main.html">주가정보</a></li>
+												<li><a href="invest_main.html">주식현황</a></li>
+												<li><a href="invest_main.html">일반현황</a></li>
+											</ul>
+											<div class="invest_hover">
+												<img src="img/index/gnb_iv_5.jpg">
+											</div>
+										</li>			
+									</ul>
+								</div>
+							</div>
+						</li>
+						<li  class="menu5 menu"><a href="event_main.html">이벤트<p class="underline"></p></a>
+							<div class="sub5zone sub">
+								<div class="sub5wrap subwrap">
+									<ul class="sub5_evttitle_wrap">
+										<li class="sub5_evt1title evttitle"><a href="event_1.html">U&amp;smile 기부이벤트<span class="underline_hover"></span></a>
+											<div class="eventhover">
+												<div class="sub5_evt_teg evtdetail">
+													<a href="event_1.html">
+													<img src="img/index/1event_11.jpg" alt="이벤트이미지"/>
+													</a>
+												</div>
+												<div class="sub5_evt_about evtdetail">
+													<h3>이벤트설명 ></h3>
+													<p>제품 구매하면 추첨을 통하여 가족 유럽 여행권을 드립니다.<br><span>구매 금액의 5%가 치료 받지 못하고 있는 아이들에게 전달 됩니다.</span></p>
+													<div>
+													<img src="img/index/gnb_evt_2.jpg" alt="의약품이미지"/><img src="img/index/gnb_evt_3.jpg" alt="선물이미지"/><img src="img/index/gnb_evt_4.jpg" alt="어린이이미지"/>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li class="sub5_evt2title evttitle"><a href="event_2.html">2주에 1번 비타민 증정 이벤트<span></span></a>
+											<div>
+												<div class="sub5_evt_teg evtdetail">
+													<a href="event_2.html">
+													<img src="img/index/1event_22.jpg" alt="이벤트이미지"/></a>
+												</div>
+												<div class="sub5_evt_about evtdetail">
+													<h3>이벤트설명 ></h3>
+													<p>고생하신 고객님들을 위해 유한양행이 준비한 건강.<br><span>매월 둘째, 넷째 주 금요일 오후 6시 30분 100분에게 영양제를 선물합니다.</span></p>
+													<div>
+													<img src="img/index/gnb_evt2_2.jpg" alt="달력이미지"/><img src="img/index/gnb_evt2_3.jpg" alt="장소이미지"/><img src="img/index/gnb_evt2_4.jpg" alt="달려가는이미지"/>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li class="sub5_evt3title evttitle"><a href="event_3.html">YUHAN 광고모델을 뽑아라<span></span></a>
+											<div>
+												<div class="sub5_evt_teg evtdetail">
+													<a href="event_3.html">
+													<img src="img/index/1event_33.jpg" alt="이벤트이미지"/>
+													</a>
+												</div>
+												<div class="sub5_evt_about evtdetail">
+													<h3>이벤트설명 ></h3>
+													<p>‘PICK YUHAN MODEL’ 유한양행의 광고모델을 직접 뽑자<br><span>TV에서 보고싶은 광고모델을 직접 PICK하고 푸짐한 경품도 가져가세요</span></p>
+													<div>
+													<img src="img/index/gnb_evt3_2.jpg" alt="아이페드이미지"/><img src="img/index/gnb_evt3_3.jpg" alt="애플워치이미지"/><img src="img/index/gnb_evt3_4.jpg" alt="스타벅스이미지"/>
+													</div>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</li>
+						
+						<li  class="menu6 menu"><a href="#">창업자유일한<p class="underline"></p></a>
+							<!-- <div class="sub6zone sub">
+								<div class="sub6wrap subwrap">
+									<div class="sub6_founderimg_wrap">
+										<img src="img/index/gnb_found_1.jpg" alt=""/>
+									</div>
+									<div class="sub6_founder_detail_wrap">
+										<a href="#"><h3>창업자 유일한박사와 유한양행의 이야기를 만나보세요></h3></a>
+										<p>“국가,교육,기업,가정이 모든 것은 순위를 정하기가 매우 어려운 명제들이다.
+										그러나 나로 말하면 바로 국가,교육,기업,가정의 순위가 된다.” -유일한 어록 中</p>
+										<div>
+											<img src="img/index/gnb_found_2.jpg" alt=""/><img src="img/index/gnb_found_3.jpg" alt=""/><img src="img/index/gnb_found_5.jpg" alt=""/><img src="img/index/gnb_found_4.jpg" alt=""/><img src="img/index/gnb_found_6.jpg" alt=""/>
+										</div>
+									</div>
+								</div>
+							</div> -->
+						</li>
+					</ul>
+				</nav>
+
+				<nav id="right_sub_icon">
+					<input type="text" id="searchbar"name="serch" placeholder="검색어를 입력하세요">
+					<a href="#"><img src="img/index/search.png" width="18px" height="auto" class="icon1" alt="검색"/></a><a href="cart.html"><img src="img/index/cart.png" class="icon2" width="21px" height="auto" alt="장바구니"/></a><a href="login.html"><img src="img/index/member.png" class="icon3" width="18px" height="auto" alt="로그인"/></a>
+				</nav>
+				<div id="notice5" class="news">
+					<div class="open-event fl">
+						<ul class="notice-list">
+							<li class="hid"><a href="news.html">유한재단, ‘제28회 전국 청소년 글짓기 대회’ 개최</a><span class="date"></span></li>
+							<li class="hid"><a href="news.html">"투명한 경영 없이 좋은 기업 나올까"</a><span class="date"></span></li>
+							<li class="hid"><a href="news.html">[오늘Who] 이정희, 유한양행 폐암신약 '레이저티닙' 상용화 총력</a><span class="date"></span></li>
+							<li class="hid"><a href="news.html">37년 영업맨의 반전..신약개발 총력, 2.5조 기술수출 '결실'</a><span class="date"></span></li>
+							<li class="hid"><a href="news.html">창립 93년 유한양행, 無적자 경영·사회 공헌 모델이 된 '국민 기업'</a><span class="date"></span></li>
+							<li class="hid"><a href="news.html">[청년이 미래다] 유한양행, 올해 연구개발비 1700억 투자…제약 마케팅 인재 육성도 병</a><span class="date"></span></li>
+							<li class="hid"><a href="news.html">G마켓, 유한양행·유한킴벌리와 '브랜드 게릴라마켓'</a><span class="date"></span></li>
+						</ul>
+						<span id="bt5">
+							<a href="#" class="prev"></a>
+							<a href="#" class="next"></a>
+						</span>
+						
+					</div>
+					<div class="control fl">
+						<a href="#" class="play" title="재생">▶</a>
+						<a href="#" class="stop" title="정지">■</a>
+					</div>
+					<script type="text/javascript">
+							fn_article3('notice5','bt5',true);	
+					</script>
+				</div>
+			</div>
+		</div>
+	</header>
+    <!--contents래퍼-->
+    <div id="im_wrapper">
+        <!--메인슬라이더-->
+        <div id="main_slide_div">
+            <div class="slider main_fslide">
+                <div class="slide">
+                    <div class="slide_img">
+                        <img src="img/index/slide9.jpg" alt=""  class="full-image animated" data-animation-in="zoomOutImage"/>
+                    </div>
+                    <div class="slide_content slide6_content">
+                        <div class="slide_content-headings">
+                            <h2 class="animated" data-animation-in="fadeInUp">유한양행이 인류건강의 길을 앞서갑니다</h2>
+                            <p class="animated" data-animation-in="fadeInUp" data-delay-in="0.5">끊임없는 도전으로 모든 질병으로부터 안전한 그날까지 멈추지 않겠습니다</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide_img">
+                        <img src="img/index/slide8.jpg" alt="연구원이미지"  class="full-image animated" data-animation-in="zoomOutImage"/>
+                    </div>
+                    <div class="slide_content slide6_content">
+                        <div class="slide_content-headings">
+                            <h2 class="animated" data-animation-in="fadeInUp">Research and Development</h2>
+                            <p class="animated" data-animation-in="fadeInUp" data-delay-in="0.5">창조적 발상을 통한 지속적 혁신, 첨단 기술을 바탕으로 글로벌 기업으로 거듭나겠습니다.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide_img">
+                        <img src="img/index/slide7.jpg" alt="손흥민이미지"  class="full-image animated" data-animation-in="zoomOutImage"/>
+                    </div>
+                    <div class="slide_content slide1_content">
+                        <div class="slide_content-headings">
+                            <img src="img/index/antifulamin.png" data-animation-in="fadeInUp" data-delay-in="0.2s"/>
+                            <h2 class="animated" data-animation-in="fadeInUp">오늘의 아픔을,</h2>
+                            <p class="animated" data-animation-in="fadeInUp" data-delay-in="0.5">내일로 가져가지 않는다.</p>
+                            <!-- <p class="animated" data-animation-in="fadeInUp"/>국민 진통제 안티푸라민</p> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide_img">
+                        <img src="img/index/slide6.jpg" alt="약품이미지"  class="full-image animated" data-animation-in="zoomOutImage"/>
+                    </div>
+                    <div class="slide_content slide3_content">
+                        <div class="slide_content-headings">
+                            <h2 class="animated" data-animation-in="fadeInLeft">비타민의  trutH 칼슘,마그네슘&amp;D 출시</h2>
+                            <p class="animated" data-animation-in="fadeInLeft" data-delay-in="0.2"> 과학적 근거를 바탕으로 건강을 위 해 필요한 5종 기능성 원료를 비율에 맞게!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide_img">
+                        <img src="img/index/slide4.jpg" alt="책이미지"  class="full-image animated" data-animation-in="zoomOutImage"/>
+                    </div>
+                    <div class="slide_content slide5_content">
+                        <div class="slide_content-headings">
+                            <h2 class="animated" data-animation-in="fadeInUp"></h2>
+                            <p class="animated" data-animation-in="fadeInUp"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide">
+                    <div class="slide_img">
+                        <img src="img/index/slide2.jpg" alt="달이미지"  class="full-image animated" data-animation-in="zoomOutImage"/>
+                    </div>
+                    <div class="slide_content slide2_content">
+                        <div class="slide_content-headings">
+                            <h2 class="animated" data-animation-in="fadeInLeft">모기퇴치, AirTrap으로 편안한 밤을 경험하세요</h2>
+                            <p class="animated" data-animation-in="fadeInLeft" data-delay-in="0.2">Airtrap:바이오레즈를 사용하여 기존 제품보다 4배 강력한 효능을 자랑합니다.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--퀵배너-->
+        <aside class="im_quick_banner_asd">
+            <ul class="qk_banner">
+                <li class="quick_icon1 qbicon">
+                    <a href="cart.html"><img src="img/index/qb_cart.png" alt="장바구니"/>
+                    </a>
+                    <div class="samplewrap">
+                        <div class="sample">
+                            장바구니로 이동합니다!
+                        </div>
+                    </div>
+                </li>
+                <li class="quick_icon2 qbicon">
+                    <a href="#" onclick="return false;"><img src="img/index/qb_custom.png" alt="고객센터"/>
+                    </a>
+                    <div class="samplewrap">
+                        <div class="sample">
+                            고객센터로 이동합니다!
+                        </div>
+                    </div>
+                </li>
+                <li class="quick_icon3 qbicon">
+                    <a href="#" onclick="return false;"><img src="img/index/qb_location.png" alt="약국찾기"/>
+                    </a>
+                    <div class="samplewrap">
+                        <div class="sample">
+                            약국을 찾으십니까?
+                        </div>
+                    </div>
+                </li>
+                <li class="quick_icon4">
+                    <a href="#">TOP
+                    </a>
+                </li>
+            </ul>	
+        </aside>
+        <!--제품슬라이드-->
+        <section id="im_product_section">
+            <header class="im_pd_sc_header">
+                <div class="intro_text">
+                    <h1>유한의신념</h1>
+                    <p class="text1">유한양행 모든 의약품은 꼼꼼하게 정성을 들여 제조합니다. 모든제품은 까다로운 기준에 부합하여 유한양행 내에서 개발 및 제작 됩니다.</p>
+                </div>
+            </header>
+            <article class="im_pr_sc_art1">
+                <div id="product_div" class="product_content">
+                    <div class="img_1">
+                            <img src="img/index/main_product1_2.jpg" alt="전문의약품"/>
+                        <div id="product_img_text"><h1>전문의약품, 일반의약품, 건강보조식품</h1>건강한 국민, 건강한 나라를 위한 선택<br><span><a href="product_list.html">제품보러가기</a></span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <!--건강의벗 스토리파트-->
+        <section id="story_section" class="story_section">
+            <article class="im_story_part">
+                    <div class="story_background">
+                        <h2>추천스토리 #건강의 벗 #신약개발의 꿈</h2>
+                        <div class="slick_wrap">
+                          <div class="center slider">
+                            <div>
+                                <div class="imagebox">
+                                    <a href="story.html">
+                                        <img src="img/index/story8.jpg" alt="공기정화식물이미지"/>
+                                        <div class="circle">
+                                            <div class="line-wrap">
+                                                <span class="line1 line"></span>
+                                                <span class="line2 line"></span>
+                                            </div>
+                                            <p>자세히보기</p>
+                                        </div>	  
+                                        <p class="im_title"><span>무엇이든 물어보세요</span><strong>가정에서 키우면 좋은 공기정화 식물들</strong></p>
+                                     </a>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="imagebox">
+                                    <a href="story.html">
+                                        <img src="img/index/story6.jpg" alt="맑은하늘이미지"/>
+                                        <div class="circle">
+                                            <div class="line-wrap">
+                                                <span class="line1 line"></span>
+                                                <span class="line2 line"></span>
+                                            </div>
+                                            <p>자세히보기</p>
+                                        </div>
+                                        <p class="im_title"><span>무엇이든 물어보세요</span><strong>맑은 하늘, 미세먼지 대처법</strong></p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="imagebox">
+                                    <a href="story.html">
+                                        <img src="img/index/story1_1.jpg" alt="의약품이미지"/>
+                                        <div class="circle">
+                                            <div class="line-wrap">
+                                                <span class="line1 line"></span>
+                                                <span class="line2 line"></span>
+                                            </div>
+                                            <p>자세히보기</p>
+                                        </div>						
+                                        <p class="im_title"><span>무엇이든 물어보세요</span><strong>의약품 성분에 관하여</strong></p>
+                                     </a>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="imagebox">
+                                    <a href="story.html">
+                                        <img src="img/index/story2.jpg" alt="비타민이미지"/>
+                                        <div class="circle">
+                                            <div class="line-wrap">
+                                               <span class="line1 line"></span>
+                                               <span class="line2 line"></span>
+                                            </div>
+                                            <p>자세히보기</p>
+                                        </div>	
+                                        <p class="im_title"><span>무엇이든 물어보세요</span><strong>많은 비타민 섭취 괜찮을까요?</strong></p>
+                                     </a>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="imagebox">
+                                    <a href="story.html">
+                                        <img src="img/index/story7.jpg" alt="여행지이미지"/>
+                                        <div class="circle">
+                                            <div class="line-wrap">
+                                                <span class="line1 line"></span>
+                                                <span class="line2 line"></span>
+                                            </div>
+                                            <p>자세히보기</p>
+                                        </div>
+                                        <p class="im_title"><span>무엇이든 물어보세요</span><strong>여행지 감염 바이러스를 확인하세요!</strong></p>
+                                     </a>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="imagebox">
+                                    <a href="story.html">
+                                        <img src="img/index/story3.jpg" alt="진드기이미지"/>
+                                        <div class="circle">
+                                            <div class="line-wrap">
+                                                <span class="line1 line"></span>
+                                                <span class="line2 line"></span>
+                                            </div>
+                                            <p>자세히보기</p>
+                                        </div>	 
+                                        <p class="im_title"><span>무엇이든 물어보세요</span><strong>휴가철 진드기, 진실은?</strong></p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="imagebox">
+                                    <a href="story.html">
+                                        <img src="img/index/story4.jpg" alt="스트레스이미지"/>
+                                        <div class="circle">
+                                            <div class="line-wrap">
+                                                <span class="line1 line"></span>
+                                                <span class="line2 line"></span>
+                                            </div>
+                                            <p>자세히보기</p>
+                                        </div>	  
+                                        <p class="im_title"><span>무엇이든 물어보세요</span><strong>스트레스에 관한 모든 것</strong></p>
+                                    </a>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="imagebox">
+                                    <a href="story.html">
+                                        <img src="img/index/story5.jpg" alt="물이미지"/>
+                                        <div class="circle">
+                                            <div class="line-wrap">
+                                               <span class="line1 line"></span>
+                                               <span class="line2 line"></span>
+                                            </div>
+                                            <p>자세히보기</p>
+                                        </div>
+                                        <p class="im_title"><span>무엇이든 물어보세요</span><strong>냉수 온수 어떤것이 좋을까요?</strong></p>	
+                                    </a>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+            </article>
+        </section>
+        <!--기업소식파트-->
+        <section id="corp_news_event_section_wrap">
+            <article class="news_wrap">
+                <div class="news_modal_wrap">
+                    <div id="infopanel0" class="modal">
+                        <div class="content">
+                            <div class="modal_new1 newsmodal">
+                                <img src="img/index/trubada.jpg" width="80%" height:="50%" alt="트루바다뉴스"/>
+                                <h1>트루바다 정 길리어드와 라이센스 채결</h1>
+                                <p>[헬스앤라이프 정연주 기자] 길리어드 사이언스 코리아(대표이사 이승우)는 유한양행(대표이사 이정희)과 길리어드의 HIV 치료제 ‘빅타비(Biktarvy)’의 국내 공동 프로모션 계약을 체결했다고 8일 밝혔다.<br><br> 양사는 이달부터 본격적인 영업 마케팅 활동을 시작할 예정이다.
+                                이번 공동 프로모션 계약은 길리어드의 HIV 치료제 ‘빅타비’에 대한 국내 공동 영업 및 마케팅에 대한 전략적 제휴다. 두 회사는 HIV 치료제 ▲트루바다(Truvada) ▲스트리빌드(Stribild) ▲데스코비(Descovy) ▲젠보야(Genvoya)에 이어 ▲빅타비까지 파트너십을 체결해 HIV 치료제 분야에 더욱 힘을 실을 방침이다.<br><br>
+                                양사는 공동 프로모션 기념식에서 많은 환자가 HIV를 방치하지 않고 조기에 진단받고 치료할 수 있는 환경을 조성하기 위해 적극 협력키로 의견을 모았다.<br><br>
+                                빅타비는 ‘빅테그라비르(Bictegravir)’, ‘엠트리시타빈(Emtricitabine)’, ‘테노포비르 알라페나마이드(Tenofovir alafenamide)’ 세 가지 성분이 하나의 정제로 이뤄진 단일정 복합 HIV 치료제다. 지난 1월 식품의약품안전처 승인을 받았다.<br><br>
+                                길리어드에 의하면 주성분 중 빅테그라비르는 강력한 2세대 통합효소억제제로 평가 받고 있다. 내성 장벽이 높아 내성 발현의 위험을 낮춘 약물이다. 테노포비르 알라페나마이드도 신장과 뼈에 대한 독성 영향을 크게 낮췄다.<br><br>
+                                빅타비는 지난해 2월 미국과 6월 유럽에서 승인받았다. 미국을 비롯한 주요 국가 치료 가이드라인에 HIV 환자의 치료 시 1차 선택 약제로 권고되고 있다.<br><br>
+                                길리어드 사이언스 코리아 이승우 대표는 “빅타비는 5건의 3상 임상 시험사례들을 통해 탁월한 효능과 보다 강력해진 내성 장벽을 입증한 약물”이라며 “국내 HIV 환자들에게 빅타비라는 혁신적인 치료 옵션을 제공할 수 있게 됐다”고 말했다.<br><br>
+                                유한양행 이정희 사장은 “유한양행과 길리어드는 이미 수 차례 전략적 제휴를 통해 국내 HIV 환자들에게 스트리빌드, 젠보야와 같은 혁신적인 신약을 공급해왔다”며 “이를 통해 쌓아온 역량과 노하우가 새롭게 출시하는 빅타비의 국내 출시를 성공시키는 데에 큰 힘이 될 것”이라고 기대했다.<br><br>
+                                한편 유한양행과 길리어드는 지난 1월 비알콜성 지방간 질환(NASH) 치료 신약후보물질의 라이선스 및 공동개발 계약을 체결한 바 있다.
+                                jyj@healthi.kr
+                                #헬스앤라이프#정연주기자#유한양행길리어드공동프로모션계약빅타비#HIV치료제#신약#영업#마케팅#가이드라인권고</p>
+                            </div>
+                        </div>
+                        <div class="close"><a href="#corp_news_event_section_wrap">X</a></div>
+                    </div>		
+                    <div id="infopanel" class="modal">
+                        <div class="content">
+                            <div class="modal_new1 newsmodal">
+                                <img src="img/index/trubada.jpg" width="80%" height:="50%" alt="트루바다뉴스"/>
+                                <h1>트루바다 정 길리어드와 라이센스 채결</h1>
+                                <p>[헬스앤라이프 정연주 기자] 길리어드 사이언스 코리아(대표이사 이승우)는 유한양행(대표이사 이정희)과 길리어드의 HIV 치료제 ‘빅타비(Biktarvy)’의 국내 공동 프로모션 계약을 체결했다고 8일 밝혔다.<br><br> 양사는 이달부터 본격적인 영업 마케팅 활동을 시작할 예정이다.
+                                이번 공동 프로모션 계약은 길리어드의 HIV 치료제 ‘빅타비’에 대한 국내 공동 영업 및 마케팅에 대한 전략적 제휴다. 두 회사는 HIV 치료제 ▲트루바다(Truvada) ▲스트리빌드(Stribild) ▲데스코비(Descovy) ▲젠보야(Genvoya)에 이어 ▲빅타비까지 파트너십을 체결해 HIV 치료제 분야에 더욱 힘을 실을 방침이다.<br><br>
+                                양사는 공동 프로모션 기념식에서 많은 환자가 HIV를 방치하지 않고 조기에 진단받고 치료할 수 있는 환경을 조성하기 위해 적극 협력키로 의견을 모았다.<br><br>
+                                빅타비는 ‘빅테그라비르(Bictegravir)’, ‘엠트리시타빈(Emtricitabine)’, ‘테노포비르 알라페나마이드(Tenofovir alafenamide)’ 세 가지 성분이 하나의 정제로 이뤄진 단일정 복합 HIV 치료제다. 지난 1월 식품의약품안전처 승인을 받았다.<br><br>
+                                길리어드에 의하면 주성분 중 빅테그라비르는 강력한 2세대 통합효소억제제로 평가 받고 있다. 내성 장벽이 높아 내성 발현의 위험을 낮춘 약물이다. 테노포비르 알라페나마이드도 신장과 뼈에 대한 독성 영향을 크게 낮췄다.<br><br>
+                                빅타비는 지난해 2월 미국과 6월 유럽에서 승인받았다. 미국을 비롯한 주요 국가 치료 가이드라인에 HIV 환자의 치료 시 1차 선택 약제로 권고되고 있다.<br><br>
+                                길리어드 사이언스 코리아 이승우 대표는 “빅타비는 5건의 3상 임상 시험사례들을 통해 탁월한 효능과 보다 강력해진 내성 장벽을 입증한 약물”이라며 “국내 HIV 환자들에게 빅타비라는 혁신적인 치료 옵션을 제공할 수 있게 됐다”고 말했다.<br><br>
+                                유한양행 이정희 사장은 “유한양행과 길리어드는 이미 수 차례 전략적 제휴를 통해 국내 HIV 환자들에게 스트리빌드, 젠보야와 같은 혁신적인 신약을 공급해왔다”며 “이를 통해 쌓아온 역량과 노하우가 새롭게 출시하는 빅타비의 국내 출시를 성공시키는 데에 큰 힘이 될 것”이라고 기대했다.<br><br>
+                                한편 유한양행과 길리어드는 지난 1월 비알콜성 지방간 질환(NASH) 치료 신약후보물질의 라이선스 및 공동개발 계약을 체결한 바 있다.
+                                jyj@healthi.kr
+                                #헬스앤라이프#정연주기자#유한양행#길리어드#공동프로모션계약#빅타비#HIV치료제#신약#영업#마케팅#가이드라인권고</p>
+                            </div>
+                        </div>
+                        <div class="close"><a href="#corp_news_event_section_wrap">X</a></div>
+                    </div>		
+                    <div id="infopanel2" class="modal">
+                        <div class="content">
+                            <div class="modal_new1 newsmodal">
+                                <img src="img/index/trubada.jpg" width="80%" height:="50%" alt=""/>
+                                <h1>트루바다 정 길리어드와 라이센스 채결</h1>
+                                <p>[헬스앤라이프 정연주 기자] 길리어드 사이언스 코리아(대표이사 이승우)는 유한양행(대표이사 이정희)과 길리어드의 HIV 치료제 ‘빅타비(Biktarvy)’의 국내 공동 프로모션 계약을 체결했다고 8일 밝혔다.<br><br> 양사는 이달부터 본격적인 영업 마케팅 활동을 시작할 예정이다.
+                                이번 공동 프로모션 계약은 길리어드의 HIV 치료제 ‘빅타비’에 대한 국내 공동 영업 및 마케팅에 대한 전략적 제휴다. 두 회사는 HIV 치료제 ▲트루바다(Truvada) ▲스트리빌드(Stribild) ▲데스코비(Descovy) ▲젠보야(Genvoya)에 이어 ▲빅타비까지 파트너십을 체결해 HIV 치료제 분야에 더욱 힘을 실을 방침이다.<br><br>
+                                양사는 공동 프로모션 기념식에서 많은 환자가 HIV를 방치하지 않고 조기에 진단받고 치료할 수 있는 환경을 조성하기 위해 적극 협력키로 의견을 모았다.<br><br>
+                                빅타비는 ‘빅테그라비르(Bictegravir)’, ‘엠트리시타빈(Emtricitabine)’, ‘테노포비르 알라페나마이드(Tenofovir alafenamide)’ 세 가지 성분이 하나의 정제로 이뤄진 단일정 복합 HIV 치료제다. 지난 1월 식품의약품안전처 승인을 받았다.<br><br>
+                                길리어드에 의하면 주성분 중 빅테그라비르는 강력한 2세대 통합효소억제제로 평가 받고 있다. 내성 장벽이 높아 내성 발현의 위험을 낮춘 약물이다. 테노포비르 알라페나마이드도 신장과 뼈에 대한 독성 영향을 크게 낮췄다.<br><br>
+                                빅타비는 지난해 2월 미국과 6월 유럽에서 승인받았다. 미국을 비롯한 주요 국가 치료 가이드라인에 HIV 환자의 치료 시 1차 선택 약제로 권고되고 있다.<br><br>
+                                길리어드 사이언스 코리아 이승우 대표는 “빅타비는 5건의 3상 임상 시험사례들을 통해 탁월한 효능과 보다 강력해진 내성 장벽을 입증한 약물”이라며 “국내 HIV 환자들에게 빅타비라는 혁신적인 치료 옵션을 제공할 수 있게 됐다”고 말했다.<br><br>
+                                유한양행 이정희 사장은 “유한양행과 길리어드는 이미 수 차례 전략적 제휴를 통해 국내 HIV 환자들에게 스트리빌드, 젠보야와 같은 혁신적인 신약을 공급해왔다”며 “이를 통해 쌓아온 역량과 노하우가 새롭게 출시하는 빅타비의 국내 출시를 성공시키는 데에 큰 힘이 될 것”이라고 기대했다.<br><br>
+                                한편 유한양행과 길리어드는 지난 1월 비알콜성 지방간 질환(NASH) 치료 신약후보물질의 라이선스 및 공동개발 계약을 체결한 바 있다.
+                                jyj@healthi.kr
+                                #헬스앤라이프#정연주기자#유한양행#길리어드#공동프로모션계약#빅타비#HIV치료제#신약#영업#마케팅#가이드라인권고</p>
+                            </div>
+
+                        </div>
+                        <div class="close"><a href="#corp_news_event_section_wrap">X</a></div>
+                    </div>
+                    <div id="infopanel3" class="modal">
+                        <div class="content">
+                            <div class="modal_new1 newsmodal">
+                                <img src="img/index/trubada.jpg" width="80%" height:="50%" alt=""/>
+                                <h1>트루바다 정 길리어드와 라이센스 채결</h1>
+                                <p>[헬스앤라이프 정연주 기자] 길리어드 사이언스 코리아(대표이사 이승우)는 유한양행(대표이사 이정희)과 길리어드의 HIV 치료제 ‘빅타비(Biktarvy)’의 국내 공동 프로모션 계약을 체결했다고 8일 밝혔다.<br><br> 양사는 이달부터 본격적인 영업 마케팅 활동을 시작할 예정이다.
+                                이번 공동 프로모션 계약은 길리어드의 HIV 치료제 ‘빅타비’에 대한 국내 공동 영업 및 마케팅에 대한 전략적 제휴다. 두 회사는 HIV 치료제 ▲트루바다(Truvada) ▲스트리빌드(Stribild) ▲데스코비(Descovy) ▲젠보야(Genvoya)에 이어 ▲빅타비까지 파트너십을 체결해 HIV 치료제 분야에 더욱 힘을 실을 방침이다.<br><br>
+                                양사는 공동 프로모션 기념식에서 많은 환자가 HIV를 방치하지 않고 조기에 진단받고 치료할 수 있는 환경을 조성하기 위해 적극 협력키로 의견을 모았다.<br><br>
+                                빅타비는 ‘빅테그라비르(Bictegravir)’, ‘엠트리시타빈(Emtricitabine)’, ‘테노포비르 알라페나마이드(Tenofovir alafenamide)’ 세 가지 성분이 하나의 정제로 이뤄진 단일정 복합 HIV 치료제다. 지난 1월 식품의약품안전처 승인을 받았다.<br><br>
+                                길리어드에 의하면 주성분 중 빅테그라비르는 강력한 2세대 통합효소억제제로 평가 받고 있다. 내성 장벽이 높아 내성 발현의 위험을 낮춘 약물이다. 테노포비르 알라페나마이드도 신장과 뼈에 대한 독성 영향을 크게 낮췄다.<br><br>
+                                빅타비는 지난해 2월 미국과 6월 유럽에서 승인받았다. 미국을 비롯한 주요 국가 치료 가이드라인에 HIV 환자의 치료 시 1차 선택 약제로 권고되고 있다.<br><br>
+                                길리어드 사이언스 코리아 이승우 대표는 “빅타비는 5건의 3상 임상 시험사례들을 통해 탁월한 효능과 보다 강력해진 내성 장벽을 입증한 약물”이라며 “국내 HIV 환자들에게 빅타비라는 혁신적인 치료 옵션을 제공할 수 있게 됐다”고 말했다.<br><br>
+                                유한양행 이정희 사장은 “유한양행과 길리어드는 이미 수 차례 전략적 제휴를 통해 국내 HIV 환자들에게 스트리빌드, 젠보야와 같은 혁신적인 신약을 공급해왔다”며 “이를 통해 쌓아온 역량과 노하우가 새롭게 출시하는 빅타비의 국내 출시를 성공시키는 데에 큰 힘이 될 것”이라고 기대했다.<br><br>
+                                한편 유한양행과 길리어드는 지난 1월 비알콜성 지방간 질환(NASH) 치료 신약후보물질의 라이선스 및 공동개발 계약을 체결한 바 있다.
+                                jyj@healthi.kr
+                                #헬스앤라이프#정연주기자#유한양행#길리어드#공동프로모션계약#빅타비#HIV치료제#신약#영업#마케팅#가이드라인권고</p>
+                            </div>
+                        </div>
+                        <div class="close"><a href="#corp_news_event_section_wrap">X</a></div>
+                    </div>
+                    <div id="infopanel4" class="modal">
+                        <div class="content">
+                            <div class="modal_new1 newsmodal">
+                                <img src="img/index/trubada.jpg" width="80%" height:="50%" alt=""/>
+                                <h1>트루바다 정 길리어드와 라이센스 채결</h1>
+                                <p>[헬스앤라이프 정연주 기자] 길리어드 사이언스 코리아(대표이사 이승우)는 유한양행(대표이사 이정희)과 길리어드의 HIV 치료제 ‘빅타비(Biktarvy)’의 국내 공동 프로모션 계약을 체결했다고 8일 밝혔다.<br><br> 양사는 이달부터 본격적인 영업 마케팅 활동을 시작할 예정이다.
+                                이번 공동 프로모션 계약은 길리어드의 HIV 치료제 ‘빅타비’에 대한 국내 공동 영업 및 마케팅에 대한 전략적 제휴다. 두 회사는 HIV 치료제 ▲트루바다(Truvada) ▲스트리빌드(Stribild) ▲데스코비(Descovy) ▲젠보야(Genvoya)에 이어 ▲빅타비까지 파트너십을 체결해 HIV 치료제 분야에 더욱 힘을 실을 방침이다.<br><br>
+                                양사는 공동 프로모션 기념식에서 많은 환자가 HIV를 방치하지 않고 조기에 진단받고 치료할 수 있는 환경을 조성하기 위해 적극 협력키로 의견을 모았다.<br><br>
+                                빅타비는 ‘빅테그라비르(Bictegravir)’, ‘엠트리시타빈(Emtricitabine)’, ‘테노포비르 알라페나마이드(Tenofovir alafenamide)’ 세 가지 성분이 하나의 정제로 이뤄진 단일정 복합 HIV 치료제다. 지난 1월 식품의약품안전처 승인을 받았다.<br><br>
+                                길리어드에 의하면 주성분 중 빅테그라비르는 강력한 2세대 통합효소억제제로 평가 받고 있다. 내성 장벽이 높아 내성 발현의 위험을 낮춘 약물이다. 테노포비르 알라페나마이드도 신장과 뼈에 대한 독성 영향을 크게 낮췄다.<br><br>
+                                빅타비는 지난해 2월 미국과 6월 유럽에서 승인받았다. 미국을 비롯한 주요 국가 치료 가이드라인에 HIV 환자의 치료 시 1차 선택 약제로 권고되고 있다.<br><br>
+                                길리어드 사이언스 코리아 이승우 대표는 “빅타비는 5건의 3상 임상 시험사례들을 통해 탁월한 효능과 보다 강력해진 내성 장벽을 입증한 약물”이라며 “국내 HIV 환자들에게 빅타비라는 혁신적인 치료 옵션을 제공할 수 있게 됐다”고 말했다.<br><br>
+                                유한양행 이정희 사장은 “유한양행과 길리어드는 이미 수 차례 전략적 제휴를 통해 국내 HIV 환자들에게 스트리빌드, 젠보야와 같은 혁신적인 신약을 공급해왔다”며 “이를 통해 쌓아온 역량과 노하우가 새롭게 출시하는 빅타비의 국내 출시를 성공시키는 데에 큰 힘이 될 것”이라고 기대했다.<br><br>
+                                한편 유한양행과 길리어드는 지난 1월 비알콜성 지방간 질환(NASH) 치료 신약후보물질의 라이선스 및 공동개발 계약을 체결한 바 있다.
+                                jyj@healthi.kr
+                                #헬스앤라이프#정연주기자#유한양행#길리어드#공동프로모션계약#빅타비#HIV치료제신약영업#마케팅#가이드라인권고</p>
+                            </div>
+                        </div>
+                        <div class="close"><a href="#corp_news_event_section_wrap">X</a></div>
+                    </div>
+                </div>
+
+                <header class="news_title_wrap">
+                    <hgroup><h1>유한양행의 <a href="news.html"><span id="news_title_span">다양한 소식</span></a>을 만나보세요</h1>
+                    </hgroup>
+                </header>
+                <div id="product_news_wrap">
+                    <div class="product_left_wrap">
+                        <a href="#infopanel0"><img src="img/index/pro_news1.jpg" alt="제품소식1"/><p>조현병 치료제 카리프라진 임상실험 성공</p><span>자세히보기</span></a>
+                    </div>
+                    <div class="product_right_wrap">
+                        <div class="content1_box_wrap cont_box">
+                        <a href="#infopanel"><img src="img/index/news2.png" alt="제품소식2"/>
+                            <p>트루바다 정 길리어드와 라이센스 체결</p><span>보러가기</span></a>
+                        </div>
+                        <div class="content2_box_wrap cont_box">
+                        <a href="#infopanel2"><img src="img/index/news3.png" alt="제품소식3"/>
+                            <p>레바넥스 길리어드에 판매권 양도</p><span>보러가기</span></a>
+                        </div>
+                        <div class="content3_box_wrap cont_box">
+                        <a href="#infopanel3"><img src="img/index/news4.png" alt="제품소식4"/>
+                            <p>버리어드정 길리어드와 공동 판매</p><span>보러가기</span></a>
+                        </div>
+                        <div class="content4_box_wrap cont_box">
+                        <a href="#infopanel4"><img src="img/index/news5.png" alt="제품소식5"/>
+                            <p>소발디 정 국내 단독판매</p><span>보러가기</span></a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <!--이벤트시작-->	 
+        <section id="event_wrap">
+            <article id="event_article_wrap" class="event_artiback">
+                <div id="event_content_slide">
+                    <h1 class="event_title">특별한 혜택, 다양한 이벤트를 확인하시기 바랍니다</h1>
+                    <div class="track_slider slider">
+                        <div>
+                            <div class="track_list_wrap">
+                                <div class="event_textbox">
+                                    <h1>UNICEF x YUHAN의 인류구하기 프로젝트</h1>
+                                    <p>제품 구매만 하면 유럽 가족 여행권, 그뿐만 아니라 기부까지 동시에 된다?! UNICEF와 YUHAN의 만남! 전 세계 인구가 모두 건강하고 행복하길 바라는 마음으로 만든 !
+                                    </p>
+                                </div>
+                                <!-- <div class="event_imagebox1">
+                                    <img src="img/index/1event_11.jpg" alt="U and smile"/>
+                                </div> -->
+                                <div class="event_imagebox2">
+                                    <a href="event_1.html">
+                                        <img src="img/index/1event_11.jpg" alt="U and smile"/>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="track_list_wrap">
+                                <div class="event_textbox">
+                                    <h1>2YUHAN,이 유한이 건강을 선물합니다</h1>
+                                    <p>요번 주도 많이 힘드셨죠? 그래서 유한이 준비한 매월 둘,넷째 주 금요일! 아무도 모르는 은밀한 장소에서 선착순 100분에게 유한양행 건강보조식품 세트를 증정합니다!</p>
+                                </div>
+                                <!-- <div class="event_imagebox1">
+                                    <img src="img/index/1event_1.jpg" alt="U and smile"/>
+                                </div> -->
+                                <div class="event_imagebox2">
+                                    <a href="event_2.html">
+                                        <img src="img/index/1event_22.jpg" alt="2yuhan"/>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="track_list_wrap">
+                                <div class="event_textbox">
+                                    <h1>YUHAN의 모델을 PICK하라!</h1>
+                                    <p>이제 식상한 광고모델은 그만! 광고모델 추천하고 다양한 경품까지 얻을 수 있는 기회! 간단한 추첨방식을 통해 이벤트 참여가 가능하니 많은 관심과 참여 부탁 드립니다! </p>
+                                </div>
+                                <!-- <div class="event_imagebox1">
+                                    <img src="img/index/1event_1.jpg" alt="U and smile"/>
+                                </div> -->
+                                <div class="event_imagebox2">
+                                    <a href="#" onclick="return false;">
+                                        <img src="img/index/1event_33.jpg" alt="U and smile"/>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div id="view_more" class="event_view_more"><a href="event_main.html">VIEW MORE</a></div>
+            </article>
+        </section>
+        <!--비디오시작-->
+        <div id="corp_video" class="video_section">
+            <p id="video">
+                <video src="video/cellcorp.mp4" type="mp4" autoplay muted loop="loop"></video>
+            </p>
+            <div id="video_list">
+                <ul id="inner_list">
+                    <li class="video_target"><a href="video/cellcorp.mp4"><video src="video/cellcorp.mp4" type="mp4" muted></video><p>세계최초 그리고 유한</p></a></li>
+                    <li><a href="video/hdc.mp4"><video src="video/hdc.mp4" type="mp4" muted ></video><p>행복한 가정을 풍요로운 삶</p></a></li>
+                    <li><a href="video/sk.mp4"><video src="video/sk.mp4" type="mp4" muted></video><p>우리는 청춘이다</p></a></li>
+                    <li><a href="video/cell_future.mp4"><video src="video/cell_future.mp4" type="mp4" muted></video><p>새로운 시대 혁신</p></a></li>
+                </ul>
+            </div>	
+        </div>
+        <!--기업소개-->
+        <section class="about_yh_section">
+            <article class="ab_yh_sec_art1">
+                <div class="company">
+                    <h1>유한양행 자세히 보기</h1>
+                    <p class="companytext">유한양행은 우수한 의약품을 생산하여 국민의 건강과 행복증진, <br>나아가 인류 보건향상에 기여할 것을 약속합니다.
+                    </p>
+                    <div class="companybox">
+                        <a href="research_develop.html">
+                            <div><img src="img/index/company1.jpg" alt="이미지1"/></div>
+                            건강한 미래를 위한 끊임 없는 도전<br>연구개발
+                        </a>
+                        <a href="company_main.html#im_csr_wrap">
+                            <div><img src="img/index/company2.jpg" alt="이미지2"/></div>
+                            공정한 거래를 위한 유한의 정신<br>CSR
+                        </a>
+                        <a href="company_main.html#im_history_wrap">
+                            <div><img src="img/index/company3.jpg" alt="이미지3"/></div>
+                            유한양행의 걸어온 길<br>회사연혁
+                        </a>
+                        <a href="invest_main.html">
+                            <div><img src="img/index/company4.jpg" alt="이미지4"/></div>
+                            미래를 위한 확실한 선택<br>투자정보
+                        </a>
+                        <a href="company_main.html#familycompany">
+                            <div><img src="img/index/cpmpany5.jpg" alt="이미지5"/></div>
+                            유한의 가족을 소개합니다<br>가족회사
+                        </a>
+                    </div>
+                </div>
+            </article>
+	   </section>
+    </div>
+    <!--푸터시작-->
+    <footer>
+	<div id="footermom">
+		<div class="footerbox">
+			<div id="footer">
+					<div class="textbox1"> 
+						<p class="footer1"><a href="company_main.html">회사소개 <span class="footer_allow">&gt;</span></a></p>
+						<a href="company_main.html">CEO메세지 <span class="footer_allow">&gt;</span></a><br><br>
+						<a href="company_main.html">회사연혁 <span class="footer_allow">&gt;</span></a><br><br>
+						<a href="company_main.html">경영정보 <span class="footer_allow">&gt;</span></a><br><br>
+						<a href="company_main.html">기업이념 <span class="footer_allow">&gt;</span></a><br><br>
+						<a href="company_main.html">CSR공정거래 <span class="footer_allow">&gt;</span></a>
+					</div>
+					<div class="textbox1">
+						<p class="footer1"><a href="product_list.html">제품정보 <span class="footer_allow">&gt;</span></a></p>
+						<a href="product_list.html">전문의약품 <span class="footer_allow">&gt;</span></a><br><br>
+						<a href="product_list.html">일반의약품 <span class="footer_allow">&gt;</span></a><br><br>
+						<a href="product_list.html">건강기능식품 <span class="footer_allow">&gt;</span></a><br><br>
+						<a href="product_list.html">동물약품 <span class="footer_allow">&gt;</span></a><br><br>
+						<a href="product_list.html">가정상비약 <span class="footer_allow">&gt;</span></a>
+					</div>
+					<div class="textbox1">
+						<p class="footer1"><a href="company_main.html">가족회사 <span class="footer_allow">&gt;</span></a></p>
+						<a href="http://www.yuhanclorox.co.kr/">유한크로락스 <span class="footer_allow">&gt;</span></a><br><br>
+						<a href="http://www.yuhanmedica.co.kr/">유한메디카 <span class="footer_allow">&gt;</span></a><br><br>
+						<a href="http://www.beecom-c.co.kr/site/">삐콤씨 <span class="footer_allow">&gt;</span></a><br><br>
+						<a href="https://www.armandhammer.com/">ARM&amp;Hammer <span class="footer_allow">&gt;</span></a><br><br>
+						<a href="http://www.yuhanchem.co.kr/">주식회사 유한화학 <span class="footer_allow">&gt;</span></a><br><br>
+						<a href="https://www.janssen.com/korea/product/%ED%86%B5%EC%A6%9D%EA%B3%84-%28%EC%A4%91%EB%93%B1%EB%8F%84-%EC%A4%91%EC%A6%9D%EC%9D%98-%ED%86%B5%EC%A6%9D-%EC%B9%98%EB%A3%8C%EC%A0%9C%29">주식회사 한국얀센 <span class="footer_allow">&gt;</span></a><br><br>
+						<a href="http://www.yuhan-kimberly.co.kr/">유한킴벌리 <span class="footer_allow">&gt;</span></a><br><br>
+						<a href="https://www.neworigin.co.kr/">뉴오리진 <span class="footer_allow">&gt;</span></a><br><br>
+					</div>
+			</div>
+			<div id="footer2">
+				<div class="textmom">	
+						<div class="textbox1">
+							<p class="footer1"><a href="research_develop.html">연구개발 <span class="footer_allow">&gt;</span></a></p>
+							<a href="rd_mission.html">미션&amp;비젼 <span class="footer_allow">&gt;</span></a><br><br>
+							<a href="rd_progress.html">연구역량 <span class="footer_allow">&gt;</span></a><br><br>
+							<a href="rd_pipeline.html">파이프라인 <span class="footer_allow">&gt;</span></a><br><br>
+						</div>
+						<div class="textbox1">
+							<p class="footer1"><a href="invest_main.html">투자정보 <span class="footer_allow">&gt;</span></a></p>
+							<a href="news.html">언론보도 및 기업소식 <span class="footer_allow">&gt;</span></a><br><br>
+							<a href="invest_co.html">기업지배구조 <span class="footer_allow">&gt;</span></a><br><br>
+							<a href="invest_main.html">Annual Report <span class="footer_allow">&gt;</span></a><br><br>
+						</div>
+				</div>
+					<div id="follow_icon">
+						<p class="footer2_icon">Follow us <span class="footer_allow">&gt;</span></p>
+						<div class="ft2_ic_img">
+							<div class="snsicon1">
+								<a href="https://www.facebook.com/YuHan.page/?ref=page_internal">
+									<img src="img/index/facebook.png" alt="페이스북"/>
+								</a>
+							</div>
+							<div class="snsicon1">
+								<a href="https://www.youtube.com/channel/UCj8JVns5iPWYn7eTUkqM7jg">
+									<img src="img/index/youtube.png" alt="유튜브"/>
+								</a>
+							</div>
+							<div class="snsicon1">
+								<a href="https://www.instagram.com/healthyuhan/">
+									<img src="img/index/instargram.png" alt="인스타그램"/>
+								</a>
+							</div>
+							<div class="snsicon1">
+								<a href="#">
+									<img src="img/index/kakaotalk.png" alt="카카오톡"/>
+								</a>
+							</div>
+							<div class="snsicon1">
+								<a href="#">
+									<img src="img/index/wechat.png" alt="위쳇"/>
+								</a>
+							</div>
+							<div class="snsicon1">
+								<a href="#">
+									<img src="img/index/line.png" alt="라인"/>
+								</a>
+							</div>
+						</div>
+					</div>
+			</div>
+		</div>
+        <div class="footer_notice">
+                <p class="notice1"><a href="#" onclick="return false;">법적고지 <span class="footer_allow">&gt;</span></a></p>
+				<p class="notice1"><a href="#" onclick="return false;">이용약관 <span class="footer_allow">&gt;</span></a></p>
+				<p class="notice1"><a href="#" onclick="return false;">정보처리방침 <span class="footer_allow">&gt;</span></a></p>
+				<p class="notice1"><a href="#" onclick="return false;">영상정보방침 <span class="footer_allow">&gt;</span></a></p>
+				<p class="notice1"><a href="#" onclick="return false;">이메일무단수집거부 <span class="footer_allow">&gt;</span></a></p>
+				<p class="notice1"><a href="#" onclick="return false;">스팸정책 <span class="footer_allow">&gt;</span></a></p>
+				<p class="notice1"><a href="#" onclick="return false;">법적고지 <span class="footer_allow">&gt;</span></a></p>
+				<p class="notice1"><a href="#" onclick="return false;">사이트이용도움말 <span class="footer_allow">&gt;</span></a></p>
+        </div>
+        <address class="footer_address">
+				서울시 동작구 노량진로 74 문의전화: 02-828-0181 FAX: 02-828-0050 대표자 이정희 사업자등록번호 118-81-00601 &nbsp;&nbsp;COPYRIGHT(C) 2019YUHAN ALL RIGHTS RESERVED
+        </address>
+	</div>
+</footer>
+
+    <script src="./slick/slick.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./slick/slick-animation.js" type="text/javascript" charset="utf-8"></script>
+    <script src="./slick/slick-animation.min.js" type="text/javascript" charset="utf-8"></script>
+
+    <script type="text/javascript">
+ $(document).on('ready', function() {
+	//팝업
+	if($.cookie("pop")!="no")$("#pop_wrap").fadeIn("slow");
+	$("#pop_wrap").css("cursor","move").draggable();
+	$("#pop_wrap area:eq(0)").on("click",function(){
+		$("#pop_wrap").fadeOut("fast");
+			return false;
+	});
+	$("#pop_wrap area:eq(1)").on("click",function(){
+		$.cookie("pop","no",{expires:1});
+		$("#pop_wrap").fadeOut("fast");
+		return false;
+	});
+	
+	$("#main_slide_div .slider").slick({
+		dots: true,
+		infinite: true,
+		fade: true,
+		autoplay:true,
+		autoplaySpeed:5000,
+		slidesToShow: 1,
+		slidesToScroll: 1
+	}).slickAnimation(); 
+
+	$('.im_story_part .center').slick({
+	  centerMode:true,
+	  dots: true,
+	  centerPadding: '0',
+	  slidesToShow: 3,
+	  speed:1000,
+	
+	  responsive: [
+	  {
+      breakpoint: 1024,
+      settings: {
+        arrows: true,
+        centerMode: false,
+        slidesToShow: 2,
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        centerMode: false,
+        centerPadding: '100px',
+        slidesToShow:2,
+      }
+    },
+    {
+	  breakpoint: 550,
+      settings: {
+		  arrows: false,
+		  centerMode: false,
+		  slidesToShow: 1,
+      }
+    }
+  ]
+  
+ });  
+  $("#event_wrap .track_slider").slick({
+        infinite: true,
+		autoplay:false,
+		autoplaySpeed:4000,
+		speed: 1500,
+		fade: true,
+		cssEase: 'linear',
+		arrows:true,
+		dots:true
+   });
+   
+    $('#event_wrap .slick-active').find('.event_textbox').addClass('active');
+    $('#event_wrap .slick-active').find('.event_imagebox1').addClass('active');
+    $('#event_wrap .slick-active').find('.event_imagebox2').addClass('active');
+	$('#event_wrap .track_slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+		$('#event_wrap .track_slider').find('.event_textbox').removeClass('active');
+		$('#event_wrap .track_slider').find('.event_imagebox1').removeClass('active');
+		$('#event_wrap .track_slider').find('.event_imagebox2').removeClass('active');
+		
+		$('#event_wrap .slick-slide[data-slick-index='+nextSlide+'] .event_textbox').addClass('setPo');
+		
+		$('#event_wrap .slick-slide[data-slick-index='+nextSlide+'] .event_imagebox1').addClass('setPo');
+		
+		$('#event_wrap .slick-slide[data-slick-index='+nextSlide+'] .event_imagebox2').addClass('setPo');	
+	});
+
+	$('#event_wrap .track_slider').on('afterChange', function(event, slick, currentSlide){
+		$('#event_wrap .track_slider').find('.event_textbox').addClass('active').removeClass('setPo');
+		$('#event_wrap .track_slider').find('.event_imagebox1').addClass('active').removeClass('setPo');
+		$('#event_wrap .track_slider').find('.event_imagebox2').addClass('active').removeClass('setPo');
+	});
+});
+</script>
+
+</body>
+</html>

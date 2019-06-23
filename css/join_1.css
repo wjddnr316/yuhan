@@ -1,0 +1,111 @@
+@meta charset="utf-8";
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800');
+ 
+*{margin:0; padding:0; box-sizing:border-box;}
+html,body{height:100%; font:0.8em 'Nanum Gothic',sans-serif; color:#666;}
+a{text-decoration:none; font-size:0.8em; color:#666;}
+img{vertical-align:bottom;}
+ul li{list-style:none;}
+	table,td,th{border-collapse:collapse; text-align:center;}
+
+/*기본 체크박스 없애기*/
+input{position: absolute;
+width: 1px;
+height: 1px;
+padding: 0;
+margin: -1px;
+overflow: hidden;
+clip:rect(0,0,0,0);
+border: 0}
+
+/*웹의 경우 커서에 pointer 설정*/
+input[type="checkbox"] + label {
+display: inline-block;
+position: relative;
+cusor: pointer;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+/*새로운 디자인의 체크박스 만들기*/
+input[type="checkbox"] + label:before {
+content: ' ';
+display: inline-block;
+width: 16px;
+height: 16px;
+line-height: 16px;
+margin: -2px 8px 0 0;
+text-align: center;
+vertical-align: middle;
+background: #fafafa;
+border: 1px solid #cacece;
+border-radius: 3px;
+box-shadow: 0px 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+}
+input[type="checkbox"] + label:active:before,input[type="checkbox"]:checked + label:active:before { box-shadow: 0px 1px 2px rgba(0,0,0,0.05), inset 0px 1px 3px rgba(0,0,0,0.1);}
+input[type="checkbox"]:checked + label:before {
+content: '\2713';
+color: #4a624e;
+text-shadow: 1px 1px white;
+background: #f1f4ff;
+border-color: #adb8c0;
+box-shadow: 0px 1px 2px rgba(0,0,0,0.05), inset 0px -15px 10px -12px rgba(0,0,0,0.05);
+}
+
+
+
+
+#logo img{vertical-align:bottom;}
+
+#logo{width:100%; text-align:center; margin:0 auto; border-bottom:0px solid #999;}
+#logo div.logo{width:40%; overflow:hidden;text-align:center; margin:0 auto;  padding-top:70px; padding-bottom:20px;border:0px solid red;}
+
+#logo div.tap{width:40%; overflow:hidden; margin:0 auto; border-bottom:1px solid #999;}
+	#logo div.tap div.tap_group{width:30%; border:0px solid orange; float:right;}
+		#logo div.tap div.tap_group div.tap_img1{width:33.333%; text-align:center; padding:7%; border:0px solid black; box-sizing:border-box;overflow:hidden; float:left;}
+		
+			#logo div.tap img{width:100%; vertical-align:bottom;}
+
+div.box1{width:100%; overflow:hidden; border:0px solid blue; font-size:1.04em;}
+	div.boxbody{width:40%; border:0px solid yellow; margin:0 auto; margin-top:20px;}
+		div.at_head1{border-bottom: 1px solid #999; overflow:hidden; padding-bottom:3%;}
+		div.headbox1{width:20px; height:20px; margin-top:4px; border:1px solid black; border-radius:5px; box-sizing:border-box; float:left;}
+		div.boxbody h2{display:inline-block;}
+
+		div.at_head2{border:0px solid green; overflow:hidden;}
+		div.headbox2{width:15px; height:15px; margin-top:30px; border:1px solid black; border-radius:5px; box-sizing:border-box; float:left;}
+		div.at_head2 p{display:inline-block; box-sizing:border-box; margin-bottom:5px; margin-top:30px;}
+		
+/**********동의 체크박스****************/
+ #all_check[type="checkbox"] + label:before{width:20px; height:20px; margin-left:0px; margin-top:-3px;}
+.ck_box{vertical-align:middle; margin-top:-1px;}
+	#articlebox{height:120px; line-height:1.4; overflow:auto; border:1px solid black; padding:2%; margin-top:0px; background:#fff;}
+	
+	#articlebox::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+#articlebox::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+}
+
+#articlebox::-webkit-scrollbar-thumb
+{
+	border-radius: 2px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: #4a624e;;
+}
+/**************************/
+
+div.button{width:100%; border:0px solid red; margin-top:50px; overflow:hidden; box-sizing:border-box;}
+	div.button div.bt_box1{width:20%; border:0px solid purple; padding-bottom:50px; overflow:hidden; box-sizing: border-box; text-align:center; margin:0 auto;}
+
+	div.button #bt_1 a{width:49%; background:#acacac; text-align:center;  font-size:1.4em;  color:#fff; float:left; height:60px; line-height:60px; }
+
+	div.button #bt_2 a{width:49%;background:#4a624e; text-align:center; font-size:1.4em;  color:#fff; float:left;margin-left:2%; height:60px; line-height:60px;}
+	

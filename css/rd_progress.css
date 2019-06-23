@@ -1,0 +1,157 @@
+@meta charset="utf-8";
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800');
+
+*{margin:0; padding:0; box-sizing:border-box;}
+html,body{height:100%; font:0.8em 'Nanum Gothic',sans-serif; color:#666;}
+a{text-decoration:none; font-size:0.8em; color:#666;}
+img{vertical-align:bottom;}
+ul li{list-style:none;}
+	table,td,th{border-collapse:collapse; text-align:center;}
+
+div.body_wrap{height:100%; color:#fff;}
+
+div.pg_title_wrap{
+	width:100%; 
+	height:500px;
+	margin:0 auto;
+	text-align:center;
+	background:url(../img/rd_progress/plouzane-1758197_1920.jpg) no-repeat center center; 
+	border:0px solid red;
+	}
+h1.pg_title_text{
+	display:block; 
+	padding:250px 0; 
+	font-size:4em; 
+/* 	transform:rotate(90deg); */
+	color:#fff; 
+	border:0px solid yellow;}
+
+div.pg_article_wrap{width:80%; height:90%; margin:3% auto 0 auto; position:relative;}
+
+
+.arti_box {
+  position: relative;
+  float:left;
+  margin-left:1%;
+  width: 32.666%;
+  color: #ffffff;
+  text-align: left;
+  background-color: #000000;
+  font-size: 16px;
+}
+.arti_box:nth-child(1){margin:0;}
+.arti_box * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition:opacity 0.4s ease-in-out;
+  transition:opacity 0.4s ease-in-out;
+}
+.arti_box img {
+  position: relative;
+  width: 100%;
+  height:100%;
+  vertical-align: top;
+}
+.arti_box .arti_text_box {
+  position: absolute;
+  text-align:center;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 1;
+  padding: 20px 30px;
+
+}
+
+h2.arti_title{display:inline-block; padding-top:65%; padding-bottom:10px; border-bottom:2px solid #ddd;}
+.arti_text_box P{padding-top:20px;}
+
+/*동적반응시작*/
+.arti_box .arti_text_box:before,
+.arti_box .arti_text_box:after {
+  width: 1px;
+  height: 0%;
+}
+.arti_box .arti_text_box:before {
+  right:0;
+  top: 0;
+}
+.arti_box .arti_text_box:after {
+  left: 0;
+  bottom:0;
+}
+
+.arti_box a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+}
+.arti_box:before,
+.arti_box:after,
+.arti_box .arti_text_box:before,
+.arti_box .arti_text_box:after {
+  position: absolute;
+  margin:1%;
+  content: '';
+  background-color: #fff;
+  z-index: 1;
+  -webkit-transition: all 0.4s ease-in;
+  transition: all 0.4s ease-in;
+  opacity: 1;
+}
+.arti_box:before,
+.arti_box:after {
+  height:1px;
+  width: 0%;
+}
+.arti_box:before {
+  top: 0;
+  left: 0;
+}
+.arti_box:after {
+  bottom: 0;
+  right: 0;
+}
+.arti_box:hover img.arti_img{
+  opacity: 0.5;
+}
+.arti_box:hover .arti_text_box
+{
+  opacity:1;
+}
+.arti_box:hover .arti_text_box:before,
+.arti_box:hover .arti_text_box:after {
+  height:calc( 100% - 1.24% ) ;
+}
+.arti_box:hover:before,
+.arti_box:hover:after {
+  width:calc(100% - 2%) ;
+}
+.arti_box:hover:before,
+.arti_box:hover:after,
+.arti_box:hover .arti_text_box:before,
+.arti_box:hover .arti_text_box:after
+ {
+  opacity: .8;
+}
+/*모달*/
+.content::-webkit-scrollbar {display:none;} /*스크롤은 먹히지만 스크롤 안보이게 하는법*/
+.content{text-align:center;}
+.content img{width:60%;  margin-top:30px;} 
+img.modal2_em_img{width:100%;}
+.content h1{width:100%;font-size:1.4em; padding:20px 0; margin:10px auto; border-bottom:1px solid #333; border-top:1px solid #333; background:#3769b0; color:#fff; }
+.content p{width:60%; color:#333; font-size:0.7em;margin:0 auto; text-align:left; text-indent:30px; margin-top:30px; border-bottom:1px solid #ddd;padding-bottom:20px;}
+#uname,#tel1{height:35px; width:100%;}
+
+.news_modal_wrap{/*background:transparent;*/ z-index:100;}
+.modal{position:absolute; width:0; height:0; overflow:hidden; z-index:100; margin:0auto;}
+.modal:target{position:fixed; width:100%; height:100%; left:0; top:0; background:rgba(0,0,0,.7);  z-index:200;}
+.modal:target .content{width:50%; height:70%; font-size:1.2em; line-height:20px; background:#fff;position:absolute; left:calc(50% - 25%); top:calc(50% - 31.5%); z-index:999; box-shadow:1px 1px 10px rgba(0,0,0,.5); overflow:scroll;}
+.modal:target .close {position:absolute; top:14%; right:26%; }
+.modal:target .close a, notification:target .close a{ color:#fff; font-size:2em;} 
+.modal:target .close:after, .notification:target .close:after{/* content:'뒤로'; */ position:absolute; top:0; left:0; width:40px; height:40px;  line-height:40px; text-align:center; color:#fff; font-weight:800; font-size:1em; pointer-events:none;} 

@@ -1,0 +1,33 @@
+@meta charset="utf-8";
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800&subset=korean');
+
+*{margin:0; padding:0; box-sizing:border-box;}
+html,body{height:100%; font:0.8em 'Nanum Gothic',sans-serif; color:#666;}
+a{text-decoration:none; font-size:0.8em; color:#666;}
+img{vertical-align:bottom;}
+ul li{list-style:none;}
+	table,td,th{border-collapse:collapse; text-align:center;}
+	
+div.wrap{width:100%; font-size:1.125em; margin-top:80px;}
+
+div.im_headline_navi{font-size:0.9em;margin:100px 0 10px 12.5%;}
+div.im_headline_navi a{margin-right:5px; }
+div.pipetitle{ font-size:2.4em; font-weight:700;text-align:center; border-bottom:1px solid #ddd; padding-bottom:50px;}
+div.pipeline_wrap{width:60%; margin:0 auto; overflow:hidden;}
+ul.chart_title{width:60%; position:fixed; left:20%; top:0;padding-left:6%;overflow:hidden;}
+
+ul.chart_title>li{width:14.285%; border-right:1px solid #ddd; float:left; background:#fff; padding:2% 0; text-align:center; font-size:1.3em; font-weight:700;}
+
+div.project_wrap{width:100%; overflow:hidden; clear:both; margin:2% 0; margin-bottom:100px;}
+div.first_project{margin-top:10%;}
+div.project_wrap>h2{width:10%; float:left; color:#075c3f; border-bottom:4px solid #075c3f;}
+ul.project{width:90%; float:right;}
+ul.project>li{width:100%; overflow:hidden; padding:0.5% 0;}
+.project_cont{width:14.285%; height:30px; line-height:30px; float:left; text-align:center;}
+.pipe{width:42.855%; float:left; height:30px; background:#075c3f; border-radius:20px; }
+.pipe2,.pipe3,.pipe4,.pipe10,.pipe15,.pipe16,.pipe17,.pipe18,.pipe19,.pipe20,.pipe21,.pipe25,.pipe26,.pipe27,.pipe28,.pipe29,.pipe30,.pipe31,.pipe32{width:7.129%;}
+.pipe11,.pipe14,.pipe22,.pipe24{width:14.285%;}
+.pipe9{width:21.414%;} 
+.pipe12{width:35.727%;}
+.pipe23{width:57.145%;}
+.pipe5,.pipe6,.pipe7,.pipe8{width:71.43%;}

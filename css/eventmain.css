@@ -1,0 +1,41 @@
+@meta charset="utf-8";
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800');
+
+
+*{margin:0; padding:0; box-sizing:border-box;}
+html,body{height:100%; font:0.8em 'Nanum Gothic',sans-serif; color:#666;}
+a{text-decoration:none; font-size:0.8em; color:#666;}
+img{vertical-align:bottom;}
+ul li{list-style:none;}
+
+div.wrap{width:100%; height:100%;}
+div.eventimg{font-size:0.8em; width:100%; height:40vh; display:inline-table; margin:80px auto 0 auto;
+background:url(../img/event_main/sea-3652697_1920.jpg) no-repeat left bottom 40%;
+background-size:100% auto;
+}
+div.eventimg p{display:table-cell; vertical-align:middle;font-size:4em;text-align:center; color:#fff;}
+
+
+div.tap{width:75%;  margin:100px auto 0 auto; }
+div.tap>ul{width:40%; margin:0 auto; overflow:hidden;}
+div.tap>ul>li{width:33.333%; float:left;}
+div.tap li.on a{background:#0e5137; color:#fff;}
+div.tap>ul>li>a{display:block; font-size:1.2em; text-align:center; padding:15px 0; border:1px solid #ddd; margin-right:3%; color:#666; transition:0.3s ease;}
+
+div.tap>ul>li>a:hover{background:#0e5137; color:#fff; transition:0.3s ease;}
+
+
+div.banner_div{width:75%; margin:100px auto; overflow:hidden; }
+div.bnem{width:32%; float:left; margin-right:2%; }
+div.event3{margin:0;}
+div.bn_img{width:100%; }
+div.bn_img>a{font-size:1.125em; }
+div.bn_img>a img{transition:0.5s ease;}
+div.banner_wrap{width:100%; overflow:hidden; background:#000;}
+div.banner_wrap img{width:100%;}
+div.tt_box{margin-top:5%;}
+h2{font-weight:600; color:#0e5137;}
+p.detail{margin-top:3%;}
+div.tt_box p.event-date{margin-top:5px;}
+
+div.bn_img>a:hover img{transform:scale(1.05); transition:0.5s ease; opacity:0.8; }

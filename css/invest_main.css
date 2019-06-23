@@ -1,0 +1,69 @@
+@meta charset="utf-8";
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800');
+*{margin:0; padding:0; box-sizing:border-box;}
+html,body{height:100%; font:0.8em 'Nanum Gothic',sans-serif; color:#666;}
+a{text-decoration:none; font-size:0.8em; color:#666;}
+img{vertical-align:bottom;}
+ul li{list-style:none;}
+	table,td,th{border-collapse:collapse; text-align:center;}
+#wrapper{width:100%;}
+#intro{width:100%; height:500px; display:inline-table; background:black url(../img/invest_main/skyscraper-3184798_1920.jpg) no-repeat center center; background-size:cover;}
+#intro h1{width:100%; height:100%; background:rgba(0,0,0,.2); color:#fff;text-align:center; display:table-cell; padding-top:7%;vertical-align:middle; font-size:3em;}
+
+#invest_category_section{width:100%; font-size:1.4em;}
+#invest_category_section img{width:100%;}
+#corp_news_report_article{width:70%; margin:0 auto; text-align:center;}
+div.content_wrap{width:100%; margin-top:100px; overflow:hidden; }
+div.content_wrap a{display:block; float:left; width:33.333%; position:relative; left:0; top:0;  transition:transform 0.1s ease-in-out;}
+div.content_wrap a:hover{transform:scale(0.9125); transition: 0.5s; }
+/* #corp_news_report_article hgroup{width:100%; position:absolute; left:0; bottom:0;} */
+#corp_news_report_article h2{width:100%; position:absolute; right:0; bottom:0; padding: 40px 0; font-size:1.4em; color:#2da16c; background:rgba(255,255,255,0.6);}
+
+
+div.stock_wrap{width:70%; height:503px; background:#ddd; margin:100px auto 0 auto; font-size:3em; text-align:center; color:#2da16c;}
+
+
+#schedule_arti{width:70%;margin:0 auto;}
+#schedule_arti h1{display:inline-block; width:15%; font-size:2em; }
+#schedule_table{width:85%; float:right; border-collapse:collapse; margin-bottom:50px;}
+
+#schedule_table thead tr th{font-size:1.5em; text-align:left; border-bottom:2px solid #666; padding:10px 0; color:#2da16c;}
+#schedule_table thead th a{display:block;}
+#schedule_table thead th span{float:right; font-size:1em; vertical-align:middle;}
+
+#schedule_table tbody{display:block; height:0; width:100%; overflow:hidden; transition:all 0.4s ease;}
+#schedule_table tbody tr{display:block;}
+#schedule_table tbody tr td{width:100%; display:block; font-size:1.2em; padding:20px 10px; font-weight:700; border-bottom:1px solid #ddd; color:#333; text-align:left;}
+
+
+#schedule_table td span{font-size:0.95rem;}
+#schedule_table td span strong{font-size:1.4em;}
+
+
+/*테이블 눌렀을때 출현하기*/
+#minus1,#minus2,#minus3,#minus4,#minus5{display:none;}
+#toggle2,#toggle3,#toggle4,#toggle5,#toggle6{display:none;}
+/* #eventsbox,#eventsbox1,#eventsbox2,#eventsbox3,#eventsbox4{display:none;} */
+
+#toggle2:checked~div#wrapper>section#invest_category_section>article#schedule_arti>table#schedule_table>thead>tr>th>label#button_1>span#plus1{display:none;}
+#toggle2:checked~div#wrapper>section#invest_category_section>article#schedule_arti>table#schedule_table>thead>tr>th>label#button_1>span#minus1{display:block;}
+
+#toggle3:checked~div#wrapper>section#invest_category_section>article#schedule_arti>table#schedule_table>thead>tr>th>label#button_2>span#plus2{display:none;}
+#toggle3:checked~div#wrapper>section#invest_category_section>article#schedule_arti>table#schedule_table>thead>tr>th>label#button_2>span#minus2{display:block;}
+
+#toggle4:checked~div#wrapper>section#invest_category_section>article#schedule_arti>table#schedule_table>thead>tr>th>label#button_3>span#plus3{display:none;}
+#toggle4:checked~div#wrapper>section#invest_category_section>article#schedule_arti>table#schedule_table>thead>tr>th>label#button_3>span#minus3{display:block;}
+
+#toggle5:checked~div#wrapper>section#invest_category_section>article#schedule_arti>table#schedule_table>thead>tr>th>label#button_4>span#plus4{display:none;}
+#toggle5:checked~div#wrapper>section#invest_category_section>article#schedule_arti>table#schedule_table>thead>tr>th>label#button_4>span#minus4{display:block;}
+
+#toggle6:checked~div#wrapper>section#invest_category_section>article#schedule_arti>table#schedule_table>thead>tr>th>label#button_5>span#plus5{display:none;}
+#toggle6:checked~div#wrapper>section#invest_category_section>article#schedule_arti>table#schedule_table>thead>tr>th>label#button_5>span#minus5{display:block;}
+
+#toggle2:checked~div#wrapper>section#invest_category_section>article#schedule_arti>table#schedule_table>tbody#eventsbox{height:400px; transition:all 0.5s ease;-webkit-transition:all 0.5s ease;}
+#toggle3:checked~div#wrapper>section#invest_category_section>article#schedule_arti>table#schedule_table>tbody#eventsbox1{height:400px; transition:all 0.5s ease;-webkit-transition:all 0.5s ease;}
+#toggle4:checked~div#wrapper>section#invest_category_section>article#schedule_arti>table#schedule_table>tbody#eventsbox2{height:400px; transition:all 0.5s ease;-webkit-transition:all 0.5s ease;}
+#toggle5:checked~div#wrapper>section#invest_category_section>article#schedule_arti>table#schedule_table>tbody#eventsbox3{height:400px; transition:all 0.5s ease;-webkit-transition:all 0.5s ease;}
+#toggle6:checked~div#wrapper>section#invest_category_section>article#schedule_arti>table#schedule_table>tbody#eventsbox4{height:400px; transition:all 0.5s ease;-webkit-transition:all 0.5s ease;}
+label{display:block; cursor:pointer;}
+ 
